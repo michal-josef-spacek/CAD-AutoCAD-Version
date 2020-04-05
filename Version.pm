@@ -55,6 +55,18 @@ sub list_of_acad_identifiers {
 	return keys %ACADVER;
 }
 
+sub list_of_acad_identifiers_real {
+	my $self = shift;
+
+	my @mcs = sort grep { $_ =~ m/^MC/ms } keys %ACADVER;
+	my @ac_dot = sort grep { $_ =~ m/^AC\d+\.\d+$/ms } keys %ACADVER;
+	my @ac = sort grep { $_ =~ m/^AC\d+$/ms } keys %ACADVER;
+
+	my @ids = (@mcs, @ac_dot, @ac);
+
+	return @ids;
+}
+
 1;
 
 __END__
@@ -73,6 +85,7 @@ CAD::AutoCAD::Version - Class which work with AutoCAD versions.
 
  my $obj = CAD::AutoCAD::Version->new;
  my @acad_identifiers = $obj->list_of_acad_identifiers;
+ my @acad_identifiers_real = $obj->list_of_acad_identifiers_real;
 
 =head1 METHODS
 
@@ -90,13 +103,22 @@ List AutoCAD identifiers user as DWG file magic string or $ACADVER in DXF file.
 
 Returns array of identifiers.
 
+=head2 C<list_of_acad_identifiers_real>
+
+ my @acad_identifiers_real = $obj->list_of_acad_identifiers_real;
+
+List AutoCAD identifiers used as DWG file magic string or $ACADVER in DXF file.
+Ordered by date of AutoCAD releases.
+
+Returns array of identifiers.
+
 =head1 ERRORS
 
  new():
          From Class::Utils:
                  Unknown parameter '%s'.
 
-=head1 EXAMPLE
+=head1 EXAMPLE1
 
  use strict;
  use warnings;
@@ -136,6 +158,48 @@ Returns array of identifiers.
  #     [18] "AC2.21",
  #     [19] "AC2.22",
  #     [20] "MC0.0"
+ # ]
+
+=head1 EXAMPLE2
+
+ use strict;
+ use warnings;
+
+ use Data::Printer;
+ use CAD::AutoCAD::Version;
+
+ # Object.
+ my $obj = CAD::AutoCAD::Version->new;
+
+ # Create image.
+ my @acad_identifiers_real = $obj->list_of_acad_identifiers_real;
+
+ # Print out type.
+ p @acad_identifiers_real;
+
+ # Output:
+ # [
+ #     [0]  "MC0.0"
+ #     [1]  "AC1.2",
+ #     [2]  "AC1.40",
+ #     [3]  "AC1.50",
+ #     [4]  "AC2.10",
+ #     [5]  "AC2.21",
+ #     [6]  "AC2.22",
+ #     [7]  "AC1001",
+ #     [8]  "AC1002",
+ #     [9]  "AC1003",
+ #     [10] "AC1004",
+ #     [11] "AC1006",
+ #     [12] "AC1009",
+ #     [13] "AC1012",
+ #     [14] "AC1014",
+ #     [15] "AC1015",
+ #     [16] "AC1018",
+ #     [17] "AC1021",
+ #     [18] "AC1024",
+ #     [19] "AC1027",
+ #     [20] "AC1032",
  # ]
 
 =head1 DEPENDENCIES

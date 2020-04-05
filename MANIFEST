@@ -1,5 +1,6 @@
 Changes
 examples/ex1.pl
+examples/ex2.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
@@ -21,6 +22,7 @@ t/CAD-AutoCAD-Version/01-use.t
 t/CAD-AutoCAD-Version/02-version.t
 t/CAD-AutoCAD-Version/03-new.t
 t/CAD-AutoCAD-Version/04-list_of_acad_identifiers.t
+t/CAD-AutoCAD-Version/05-list_of_acad_identifiers_real.t
 Version.pm
 xt/CAD-AutoCAD-Version/01-pod_coverage.t
 xt/CAD-AutoCAD-Version/02-pod.t

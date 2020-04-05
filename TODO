@@ -1,10 +1,11 @@
 TODO
 ====
-1. Method for print of version identifiers in real order.
-   MC0.0, AC1.2 .. AC2.22, AC1001 .. AC1032 ..
 2. Incorporate version of DWG?
    https://en.wikipedia.org/wiki/.dwg
 3.
 
 Applied
 =======
+1. Method for print of version identifiers in real order.
+   MC0.0, AC1.2 .. AC2.22, AC1001 .. AC1032 ..
+OK [20200405] skim

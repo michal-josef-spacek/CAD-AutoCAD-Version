@@ -1,4 +1,5 @@
 0.02
+ - Add list_of_acad_identifiers_real() method.
 
 0.01 2020-04-05T13:33:01+02:00
  - First version.
