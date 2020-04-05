@@ -99,7 +99,7 @@ Constructor.
 
  my @acad_identifiers = $obj->list_of_acad_identifiers;
 
-List AutoCAD identifiers user as DWG file magic string or $ACADVER in DXF file.
+List AutoCAD identifiers used as DWG file magic string or $ACADVER in DXF file.
 
 Returns array of identifiers.
 
