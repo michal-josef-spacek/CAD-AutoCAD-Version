@@ -33,7 +33,7 @@ Readonly::Hash my %ACADVER => (
 	'AC1032' => 'AutoCAD 2018/2019/2020',
 );
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 # Constructor.
 sub new {
@@ -239,6 +239,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
