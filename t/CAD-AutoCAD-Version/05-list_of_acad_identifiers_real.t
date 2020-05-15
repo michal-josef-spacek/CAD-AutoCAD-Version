@@ -11,6 +11,7 @@ my @ret = $obj->list_of_acad_identifiers_real;
 my $right_ret_ar = [
 	'MC0.0',
 	'AC1.2',
+	'AC1.3',
 	'AC1.40',
 	'AC1.50',
 	'AC2.10',

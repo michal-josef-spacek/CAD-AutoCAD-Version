@@ -10,6 +10,7 @@ my $obj = CAD::AutoCAD::Version->new;
 my @ret = sort $obj->list_of_acad_identifiers;
 my $right_ret_ar = [
 	'AC1.2',
+	'AC1.3',
 	'AC1.40',
 	'AC1.50',
 	'AC1001',
