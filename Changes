@@ -1,6 +1,7 @@
 0.04
  - Add AC1.3 version.
  - Add AC1013 version.
+ - Add DESCRIPTION section to doc.
  - Improve doc.
  - Split newer AutoCAD versions to each release.
 

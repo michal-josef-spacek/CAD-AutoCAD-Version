@@ -95,6 +95,12 @@ __END__
 
 CAD::AutoCAD::Version - Class which work with AutoCAD versions.
 
+=head1 DESCRIPTION
+
+This class describes AutoCAD versions and it's identifiers.
+
+List of identifiers is in L<Wikipedia article|https://en.wikipedia.org/wiki/AutoCAD_version_history>.
+
 =head1 SYNOPSIS
 
  use CAD::AutoCAD::Version;
