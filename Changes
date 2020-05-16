@@ -1,6 +1,7 @@
 0.04
  - Add AC1.3 version.
  - Add AC1013 version.
+ - Improve doc.
  - Split newer AutoCAD versions to each release.
 
 0.03 2020-04-06T11:57:03+02:00

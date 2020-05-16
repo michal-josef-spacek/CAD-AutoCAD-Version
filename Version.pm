@@ -111,6 +111,8 @@ CAD::AutoCAD::Version - Class which work with AutoCAD versions.
 
 Constructor.
 
+Returns instance of object.
+
 =head2 C<list_of_acad_identifiers>
 
  my @acad_identifiers = $obj->list_of_acad_identifiers;

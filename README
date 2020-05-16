@@ -14,6 +14,8 @@ METHODS
 
     Constructor.
 
+    Returns instance of object.
+
   "list_of_acad_identifiers"
      my @acad_identifiers = $obj->list_of_acad_identifiers;
 
