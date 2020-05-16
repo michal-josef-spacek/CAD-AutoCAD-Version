@@ -117,7 +117,9 @@ Returns instance of object.
 
  my @acad_identifiers = $obj->list_of_acad_identifiers;
 
-List AutoCAD identifiers used as DWG file magic string or $ACADVER in DXF file.
+List AutoCAD release identifiers.
+This identifiers are used e.g. as magic string in DWG file or as $ACADVER in DXF
+files.
 
 Returns array of identifiers.
 
@@ -125,7 +127,9 @@ Returns array of identifiers.
 
  my @acad_identifiers_real = $obj->list_of_acad_identifiers_real;
 
-List AutoCAD identifiers used as DWG file magic string or $ACADVER in DXF file.
+List AutoCAD release identifiers.
+This identifiers are used e.g. as magic string in DWG file or as $ACADVER in DXF
+files.
 Ordered by date of AutoCAD releases.
 
 Returns array of identifiers.
