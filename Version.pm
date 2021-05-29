@@ -47,6 +47,7 @@ Readonly::Hash my %ACADVER => (
 	'AC1032' => 'AutoCAD 2018',
 	'AC1033' => 'AutoCAD 2019',
 	'AC1034' => 'AutoCAD 2020',
+	'AC1035' => 'AutoCAD 2021',
 );
 
 our $VERSION = 0.05;
@@ -198,10 +199,11 @@ Returns array of identifiers.
  #     [30] "AC1032",
  #     [31] "AC1033",
  #     [32] "AC1034",
- #     [33] "AC2.10",
- #     [34] "AC2.21",
- #     [35] "AC2.22",
- #     [36] "MC0.0"
+ #     [33] "AC1035",
+ #     [34] "AC2.10",
+ #     [35] "AC2.21",
+ #     [36] "AC2.22",
+ #     [37] "MC0.0"
  # ]
 
 =head1 EXAMPLE2
@@ -260,6 +262,7 @@ Returns array of identifiers.
  #     [34] "AC1032",
  #     [35] "AC1033",
  #     [36] "AC1034",
+ #     [37] "AC1035",
  # ]
 
 =head1 DEPENDENCIES
