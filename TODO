@@ -4,7 +4,8 @@ TODO
    https://en.wikipedia.org/wiki/.dwg
 3. Method for conversion between AutoCAD release and identifier.
 4. Method for conversion between identifier and AutoCAD release.
-5.
+5. Update versions by include/dwg.h in libredwg
+6.
 
 Applied
 =======
