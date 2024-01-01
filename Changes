@@ -1,4 +1,4 @@
-0.06
+0.06 2024-01-01T23:10:35+01:00
  - Remove no-existent versions.
  - Rename example files to better names.
  - Update Module::Version to 1.21 version.
