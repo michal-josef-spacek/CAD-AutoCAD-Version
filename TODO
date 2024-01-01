@@ -5,7 +5,8 @@ TODO
 3. Method for conversion between AutoCAD release and identifier.
 4. Method for conversion between identifier and AutoCAD release.
 5. Update versions by include/dwg.h in libredwg
-6.
+6. Rename module to something DWG, this is not version of AutoCAD.
+7.
 
 Applied
 =======
