@@ -1,5 +1,6 @@
 0.06
  - Remove no-existent versions.
+ - Rename example files to better names.
  - Update Module::Version to 1.21 version.
  - Update copyright years.
 

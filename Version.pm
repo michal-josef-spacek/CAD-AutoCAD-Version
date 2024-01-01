@@ -135,6 +135,8 @@ Returns array of identifiers.
 
 =head1 EXAMPLE1
 
+=for comment filename=list_of_acad_identifiers.pl
+
  use strict;
  use warnings;
 
@@ -179,6 +181,8 @@ Returns array of identifiers.
  # ]
 
 =head1 EXAMPLE2
+
+=for comment filename=list_of_acad_identifiers_real.pl
 
  use strict;
  use warnings;
