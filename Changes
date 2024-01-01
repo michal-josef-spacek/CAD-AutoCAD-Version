@@ -1,4 +1,5 @@
 0.06
+ - Remove no-existent versions.
  - Update Module::Version to 1.21 version.
 
 0.05 2021-05-29T17:36:08+02:00
